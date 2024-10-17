@@ -11,8 +11,8 @@ BrandingText "{Gurraoptimus Development}"
 #!define MUI_HEADERIMAGE_BITMAP "io.ico"
 
 !define MUI_PAGE_HEADER_TEXT "PYmediaPlayer"
-!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music. Copyright © Gurraoptimus Development All rights reserved…"
-!define MUI_PAGE_HEADER_SUBTEXT "Copyright © 2024  {G} Gurraoptimus This application is open-source software licensed under the MIT License."
+!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music. Copyright (COPYRIGHT) Gurraoptimus Development All rights reserved…"
+!define MUI_PAGE_HEADER_SUBTEXT "Copyright (copy) 2024  {G} Gurraoptimus This application is open-source software licensed under the MIT License."
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
