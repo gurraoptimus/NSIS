@@ -1,6 +1,6 @@
 !include "MUI.nsh"
 
-#!define MUI_ICON "io.ico"
+!define MUI_ICON "io.ico"
 
 Name "PYmediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
