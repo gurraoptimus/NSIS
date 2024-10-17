@@ -4,7 +4,7 @@
 
 Name "PYmediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
-OutFile "setup.exe"
+OutFile "{Gurraoptimus Development}.exe"
 BrandingText "{Gurraoptimus Development}"
 
 !define MUI_HEADERIMAGE
