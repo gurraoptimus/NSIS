@@ -57,6 +57,7 @@ Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
+    Delete "Uninstall.exe"
 
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
