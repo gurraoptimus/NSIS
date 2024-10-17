@@ -16,4 +16,5 @@ BrandingText "{Gurraoptimus Development}"
 Section ""
     SetOutPath $INSTDIR
     File "LICENSE.txt"
+    file "pymp.exe"
 SectionEnd
