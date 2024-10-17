@@ -1,6 +1,7 @@
 !include "MUI.nsh"
 
-Name "Pymp"
+Name "pymp"
+InstallDir "$PROGRAMFILES\pymp"
 OutFile "install.exe"
 
 !insertmacro MUI_PAGE_WELCOME
@@ -11,4 +12,7 @@ OutFile "install.exe"
 
 !insertmacro MUI_LANGUAGE "Swedish"
 
-S
+Section "section_name"
+    SetOutPath $$INSTDIR
+    File "LICENSE"
+SectionEnd
