@@ -21,6 +21,11 @@ BrandingText "{Gurraoptimus Development}"
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
 
+!insertmacro MUI_UNPAGE_WELCOME
+!insertmacro MUI_UNPAGE_DIRECTORY
+!insertmacro MUI_UNPAGE_INSTFILES
+!insertmacro MUI_UNPAGE_FINISH
+
 #!insertmacro MUI_LANGUAGE "Swedish"
 !insertmacro MUI_LANGUAGE "English"
 
@@ -36,12 +41,17 @@ Section ""
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "UninstallString" "$INSTDIR\Uninstall.exe"
 
     file "LICENSE.txt"
-    file "pymp.exe"
     file "io.ico"
+SectionEnd
+
+Section "PYmediaPlayer"
+    file "pymp.exe"
 SectionEnd
 
 Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
+
+    DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "UninstallString" "$INSTDIR\Uninstall.exe"
 SectionEnd
