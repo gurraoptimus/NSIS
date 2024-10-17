@@ -2,13 +2,13 @@
 
 !define MUI_ICON "io.ico"
 !define MUI_HEADERIMAGE
-!define MUI_PAGE_HEADER_TEXT "pymp"
-#!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
+!define MUI_PAGE_HEADER_TEXT "PyMediaPlayer"
+!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
 !define MUI_PAGE_HEADER_SUBTEXT "This application is open-source software licensed under the MIT License."
 #!define MUI_HEADERIMAGE_BITMAP "file.bmp"
 #!define MUI_WELCOMEFINISHPAGE_BITMAP "file.bmp"
 
-Name "PYmediaPlayer"
+Name "PyMediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
 OutFile "Installer.exe"
 BrandingText "{Gurraoptimus Development}"
@@ -30,7 +30,7 @@ BrandingText "{Gurraoptimus Development}"
 
 Section ""
     SetOutPath $INSTDIR
-    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayName" "PYmediaPlayer"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayName" "PyMediaPlayer"
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayVersion" "1.0.0"
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "Publisher" "{Gurraoptimus Development}"
     WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayIcon" "$INSTDIR\io.ico"
@@ -42,18 +42,18 @@ Section ""
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 SectionEnd
 
-Section "PYmediaPlayer"
+Section "PyMediaPlayer"
     SetOutPath $INSTDIR
     File "pymp.exe"
-    CreateShortcut "$DESKTOP\Pymp.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
+    CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
 Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
-    Delete "$SMPROGRAMS\Pymp\Pymp.lnk"
+    Delete "$SMPROGRAMS\PyMediaPlayer\PyMediaPlayer.lnk"
     Delete "$INSTDIR\Uninstall.exe"
-    Delete "$DESKTOP\Pymp.lnk"
+    Delete "$DESKTOP\PyMediaPlayer.lnk"
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
