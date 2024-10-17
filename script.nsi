@@ -4,4 +4,4 @@ Name "Pymp"
 OutFile "install.exe"
 
 !insertmacro MUI_PAGE_WELCOME
-MUI
+!insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
