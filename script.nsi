@@ -12,7 +12,7 @@ OutFile "install.exe"
 
 !insertmacro MUI_LANGUAGE "Swedish"
 
-Section "section_name"
+Section ""
     SetOutPath $$INSTDIR
     File "LICENSE"
 SectionEnd
