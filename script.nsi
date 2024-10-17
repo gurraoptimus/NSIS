@@ -3,6 +3,7 @@
 Name "pymp"
 InstallDir "$PROGRAMFILES\pymp"
 OutFile "install.exe"
+BrandingText "{Gurraoptimus Development}"
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
