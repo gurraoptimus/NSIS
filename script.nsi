@@ -47,7 +47,7 @@ SectionEnd
 Section "PYmediaPlayer"
     SetOutPath $INSTDIR
     File "pymp.exe"
-    CreateShortcut "$SMPROGRAMS\PYmediaPlayer\PYmediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
+    CreateShortcut "$DESKTOP\PYmediaPlayer\PYmediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0"
 SectionEnd
 
 Section "Uninstall"
