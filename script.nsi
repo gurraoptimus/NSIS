@@ -1,9 +1,13 @@
 !include "MUI.nsh"
 
+!define MUI_ICON "io.ico"
+
 Name "pymp"
 InstallDir "$PROGRAMFILES\pymp"
 OutFile "install.exe"
 BrandingText "{Gurraoptimus Development}"
+
+!define MUI_HEADERIMAGE
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
