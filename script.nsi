@@ -8,8 +8,8 @@ OutFile "Installer.exe"
 BrandingText "{Gurraoptimus Development}"
 
 !define MUI_HEADERIMAGE
-!define MUI_HEADERIMAGE_BITMAP "file.bmp"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "file.bmp"
+#!define MUI_HEADERIMAGE_BITMAP "file.bmp"
+#!define MUI_WELCOMEFINISHPAGE_BITMAP "file.bmp"
 
 !define MUI_PAGE_HEADER_TEXT "PYmediaPlayer"
 !define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
