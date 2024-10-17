@@ -6,6 +6,10 @@
 !define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
 !define MUI_PAGE_HEADER_SUBTEXT "Copyright (c) 2024  {G} Gurraoptimus This application is open-source software licensed under the MIT License."
 
+!define MUI_HEADERIMAGE
+#!define MUI_HEADERIMAGE_BITMAP "file.bmp"
+#!define MUI_WELCOMEFINISHPAGE_BITMAP "file.bmp"
+
 Name "PYmediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
 OutFile "Installer.exe"
@@ -17,10 +21,6 @@ BrandingText "{Gurraoptimus Development}"
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
-
-!define MUI_HEADERIMAGE
-#!define MUI_HEADERIMAGE_BITMAP "file.bmp"
-#!define MUI_WELCOMEFINISHPAGE_BITMAP "file.bmp"
 
 !insertmacro MUI_UNPAGE_WELCOME
 !insertmacro MUI_UNPAGE_DIRECTORY
