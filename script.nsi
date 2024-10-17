@@ -4,7 +4,7 @@
 
 Name "pymp"
 InstallDir "$PROGRAMFILES\pymp"
-OutFile "install.exe"
+OutFile "setup.exe"
 BrandingText "{Gurraoptimus Development}"
 
 !define MUI_HEADERIMAGE
