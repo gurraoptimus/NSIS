@@ -27,7 +27,10 @@ BrandingText "{Gurraoptimus Development}"
 Section ""
     SetOutPath $INSTDIR
     
-    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp.exe" "DisplayName" "PYmediaPlayer"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayName" "PYmediaPlayer"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayVersion" "1.0.0"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "Publisher" "{Gurraoptimus Development}"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayIcon" $INSTDIR\"io.ico"
 
     file "LICENSE.txt"
     file "pymp.exe"
