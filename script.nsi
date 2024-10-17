@@ -8,6 +8,7 @@ OutFile "Installer.exe"
 BrandingText "{Gurraoptimus Development}"
 
 !define MUI_HEADERIMAGE
+!define MUI_HEADERIMAGE_BITMAP "io.ico"
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
