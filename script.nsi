@@ -1,6 +1,6 @@
 !include "MUI.nsh"
 
-!define MUI_ICON "io.ico"
+#!define MUI_ICON "io.ico"
 
 Name "PYmediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
@@ -21,7 +21,7 @@ BrandingText "{Gurraoptimus Development}"
 !insertmacro MUI_PAGE_FINISH
 
 !insertmacro MUI_LANGUAGE "Swedish"
-!insertmacro MUI_LANGUAGE "En"
+#!insertmacro MUI_LANGUAGE "En"
 
 Section ""
     SetOutPath $INSTDIR
