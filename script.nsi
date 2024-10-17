@@ -13,6 +13,6 @@ OutFile "install.exe"
 !insertmacro MUI_LANGUAGE "Swedish"
 
 Section ""
-    SetOutPath $$INSTDIR
+    SetOutPath $INSTDIR
     File "LICENSE.txt"
 SectionEnd
