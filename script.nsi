@@ -12,7 +12,7 @@ Name "PyMediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
 OutFile "Installer.exe"
 BrandingText "{Gurraoptimus Development}"
-${VersionCompare} "1.0.0" "1.0.0" $result
+${VersionConvert} "version" "charlist" $result
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
