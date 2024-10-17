@@ -39,3 +39,8 @@ Section ""
     file "pymp.exe"
     file "io.ico"
 SectionEnd
+
+Section "Uninstall"
+    Delete "$INSTDIR\LICENSE.txt"
+    Delete "$INSTDIR\pymp.exe"
+    Delete "$INSTDIR\io.ico"
