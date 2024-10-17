@@ -7,7 +7,7 @@ InstallDir "$PROGRAMFILES\pymp"
 OutFile "Installer.exe"
 BrandingText "{Gurraoptimus Development}"
 
-#!define MUI_HEADERIMAGE ""
+!define MUI_HEADERIMAGE
 #!define MUI_HEADERIMAGE_BITMAP "io.ico"
 
 !define MUI_PAGE_HEADER_TEXT "PYmediaPlayer"
@@ -21,6 +21,7 @@ BrandingText "{Gurraoptimus Development}"
 !insertmacro MUI_PAGE_FINISH
 
 !insertmacro MUI_LANGUAGE "Swedish"
+!insertmacro MUI_LANGUAGE "En"
 
 Section ""
     SetOutPath $INSTDIR
