@@ -39,10 +39,14 @@ Section ""
     WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayIcon" "$INSTDIR\io.ico"
     WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "NoModify" 1
     WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "NoRepair" 1
+   
+    ; the file name here n
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "UninstallString" "$INSTDIR\Uninstall.exe"
 
     file "LICENSE.txt"
     file "io.ico"
+    
+    WriteUninstaller "$INSTDIR\Uninstall.exe"
 SectionEnd
 
 Section "PYmediaPlayer"
