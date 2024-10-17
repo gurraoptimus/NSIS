@@ -10,8 +10,7 @@ BrandingText "{Gurraoptimus Development}"
 !define MUI_HEADERIMAGE
 #!define MUI_HEADERIMAGE_BITMAP "io.ico"
 
-!define MUI_PAGE_HEADER_TEXT "About PYmediaPlayer"
-
+!define MUI_PAGE_HEADER_TEXT "PYmediaPlayer"
 !define MUI_WELCOMEPAGE_TEXT "A simple video player built with PyQt5
 Copyright (c) 2024 {G} Gurraoptimus 
 This application is open-source software licensed under the MIT License."
