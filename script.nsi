@@ -45,15 +45,15 @@ SectionEnd
 Section "PYmediaPlayer"
     SetOutPath $INSTDIR
     File "pymp.exe"
-    CreateShortcut "$DESKTOP\pymp.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
+    CreateShortcut "$DESKTOP\Pymp.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
 Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
-    Delete "$SMPROGRAMS\pymp\pymp.lnk"
+    Delete "$SMPROGRAMS\Pymp\Pymp.lnk"
     Delete "$INSTDIR\Uninstall.exe"
-    Delete "$DESKTOP\pymp.lnk"
+    Delete "$DESKTOP\Pymp.lnk"
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
