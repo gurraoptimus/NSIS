@@ -11,7 +11,7 @@ BrandingText "{Gurraoptimus Development}"
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
 
-!insertmacro MUI_LANGUAGE "Eng"
+!insertmacro MUI_LANGUAGE "Swedish"
 
 Section ""
     SetOutPath $INSTDIR
