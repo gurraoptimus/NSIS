@@ -1,7 +1,7 @@
 !include "MUI.nsh"
 
 !define MUI_ICON "io.ico"
-#!define MUI_HEADERIMAGE
+!define MUI_HEADERIMAGE
 !define MUI_PAGE_HEADER_TEXT "pymp"
 #!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
 !define MUI_PAGE_HEADER_SUBTEXT "This application is open-source software licensed under the MIT License."
