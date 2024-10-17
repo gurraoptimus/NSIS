@@ -2,7 +2,7 @@
 
 !define MUI_ICON "io.ico"
 
-Name "pymp"
+Name "PYmediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
 OutFile "setup.exe"
 BrandingText "{Gurraoptimus Development}"
