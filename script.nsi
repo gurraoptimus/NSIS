@@ -10,7 +10,7 @@
 
 Name "PyMediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
-OutFile "Installer.exe"
+OutFile "PyMediaPlayer.exe"
 BrandingText "{Gurraoptimus Development}"
 
 
