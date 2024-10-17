@@ -14,5 +14,5 @@ OutFile "install.exe"
 
 Section ""
     SetOutPath $$INSTDIR
-    File "LICENSE"
+    File "LICENSE.txt"
 SectionEnd
