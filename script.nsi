@@ -27,7 +27,7 @@ BrandingText "{Gurraoptimus Development}"
 Section ""
     SetOutPath $INSTDIR
     
-    WriteRegStr root_key "subkey" "key_name" "value"
+    WriteRegStr HKLM "subkey" "key_name" "value"
 
     file "LICENSE.txt"
     file "pymp.exe"
