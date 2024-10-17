@@ -6,7 +6,7 @@
 !define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
 !define MUI_PAGE_HEADER_SUBTEXT "Copyright (c) 2024  {G} Gurraoptimus This application is open-source software licensed under the MIT License."
 
-!define MUI_HEADERIMAGE
+#!define MUI_HEADERIMAGE
 #!define MUI_HEADERIMAGE_BITMAP "file.bmp"
 #!define MUI_WELCOMEFINISHPAGE_BITMAP "file.bmp"
 
