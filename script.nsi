@@ -10,6 +10,9 @@ BrandingText "{Gurraoptimus Development}"
 !define MUI_HEADERIMAGE
 #!define MUI_HEADERIMAGE_BITMAP "io.ico"
 
+
+!define MUI_WELCOMEPAGE_TEXT "text"
+
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
 !insertmacro MUI_PAGE_DIRECTORY
