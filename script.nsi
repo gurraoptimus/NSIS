@@ -56,5 +56,6 @@ Section "Uninstall"
     Delete "$INSTDIR\io.ico"
     Delete "$SMPROGRAMS\PYmediaPlayer\PYmediaPlayer.lnk"
     Delete "$INSTDIR\Uninstall.exe"
+    Delete "$DESKTOP\PYmediaPlayer.lnk"
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
