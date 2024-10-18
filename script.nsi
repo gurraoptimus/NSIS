@@ -56,7 +56,7 @@ Section "codecguide"
 SectionEnd
 
 Section "Uninstall"
-    RMDir /r /REBOOTOK "C:\Program Files (x86)\pymp"
+    Delete /r /REBOOTOK "C:\Program Files (x86)\pymp"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
