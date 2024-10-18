@@ -40,6 +40,7 @@ Section ""
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "UninstallString" "$INSTDIR\Uninstall.exe"
     File "LICENSE.txt"
     File "io.ico"
+    file "readme.md"
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 SectionEnd
 
@@ -57,6 +58,7 @@ SectionEnd
 
 Section "Uninstall"
     RMDir /r /REBOOTOK "C:\Program Files (x86)\pymp"
+    Delete "$INSTDIR\readme.md"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
