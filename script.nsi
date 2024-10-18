@@ -11,12 +11,12 @@
 Name "PyMediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
 OutFile "PyMediaPlayer.exe"
-BrandingText "{Gurraoptimus Development}"
+BrandingText "{GurraOptimus Development}"
 
 
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
-#!insertmacro MUI_PAGE_COMPONENTS
+!insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
@@ -33,7 +33,7 @@ Section ""
     SetOutPath $INSTDIR
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayName" "PyMediaPlayer"
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayVersion" "1.0.0"
-    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "Publisher" "{Gurraoptimus Development}"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "Publisher" "GurraOptimus Development"
     WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayIcon" "$INSTDIR\io.ico"
     WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "NoModify" 1
     WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "NoRepair" 1
@@ -49,12 +49,21 @@ Section "PyMediaPlayer"
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
+Section "codecguide"
+    SetOutPath $INSTDIR
+    File "K-Lite_Codec_Pack_1860_Standard.exe"
+    CreateShortcut "$DESKTOP\K-Lite_Codec_1860_Standard.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
+SectionEnd
+
 Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
+    Delete "$SMPROGRAMS\K-Lite_Codec_Pack_1860_Standard\K-Lite_Codec_Pack_1860_Standard.lnk"
     Delete "$SMPROGRAMS\PyMediaPlayer\PyMediaPlayer.lnk"
     Delete "$INSTDIR\Uninstall.exe"
     Delete "$DESKTOP\PyMediaPlayer.lnk"
+    Delete "$DESKTOP\K-Lite_Codec_1860_Standard.lnk"
+    
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
