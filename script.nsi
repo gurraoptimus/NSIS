@@ -40,7 +40,7 @@ Section ""
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "UninstallString" "$INSTDIR\Uninstall.exe"
     File "LICENSE.txt"
     File "io.ico"
-    file "readme.md"
+    File "readme.md"
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 SectionEnd
 
