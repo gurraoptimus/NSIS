@@ -56,6 +56,7 @@ Section "codecguide"
 SectionEnd
 
 Section "Uninstall"
+    Delete "$INSTDIR\pymp\"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
