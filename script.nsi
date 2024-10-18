@@ -57,6 +57,7 @@ SectionEnd
 
 Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
+    Delete "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
     Delete "$SMPROGRAMS\K-Lite_Codec_Pack_1860_Standard\K-Lite_Codec_Pack_1860_Standard.lnk"
