@@ -51,6 +51,11 @@ Section "PyMediaPlayer"
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
+Section "README"
+    SetOutPath $INSTDIR
+    File "readme.md"
+SectionEnd
+
 Section "codecguide"
     SetOutPath $INSTDIR
     File "K-Lite_Codec_Pack_1860_Standard.exe"
