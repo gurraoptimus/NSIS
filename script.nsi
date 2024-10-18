@@ -57,9 +57,9 @@ SectionEnd
 
 Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
-    Delete "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
+    Delete "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
     Delete "$SMPROGRAMS\K-Lite_Codec_Pack_1860_Standard\K-Lite_Codec_Pack_1860_Standard.lnk"
     Delete "$SMPROGRAMS\PyMediaPlayer\PyMediaPlayer.lnk"
     Delete "$INSTDIR\Uninstall.exe"
