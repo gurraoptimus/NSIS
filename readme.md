@@ -43,6 +43,6 @@ GurraOptimus Development
 
 Website: [GurraOptimus](https://www.gurraoptimus.se)
 
-GitHub: [GurraOptimus Development](@gurraoptimus)
+GitHub: [GurraOptimus Development](https://github.com/gurraoptimus)
 
 Enjoy using PyMediaPlayer!
