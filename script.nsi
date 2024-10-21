@@ -3,6 +3,7 @@
 
 !define PRODUCT_NAME "PyMediaPlayer"
 !define PRODUCT_VERSION "1.0.0"
+!define PRODUCT_PUBLISHER "GurraOptimus Development"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PyMediaPlayer}"
 
 !define MUI_ICON "io.ico"
