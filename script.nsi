@@ -1,7 +1,7 @@
 !include "MUI.nsh"
 
 
-!define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${pymp}"
+!define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PyMediaPlayer}"
 !define PRODUCT_NAME "PyMediaPlayer"
 !define PRODUCT_VERSION "1.0.0"
 !define PRODUCT_PUBLISHER "GurraOptimus Development"
@@ -34,8 +34,8 @@ RequestExecutionLevel admin
 !insertmacro MUI_UNPAGE_INSTFILES
 !insertmacro MUI_UNPAGE_FINISH
 
-#!insertmacro MUI_LANGUAGE "Swedish"
-!insertmacro MUI_LANGUAGE "English"
+!insertmacro MUI_LANGUAGE "Swedish"
+#!insertmacro MUI_LANGUAGE "English"
 
 Section ""
     SetOutPath $INSTDIR
