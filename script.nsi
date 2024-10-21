@@ -10,7 +10,7 @@
 !define MUI_ICON "io.ico"
 !define MUI_HEADERIMAGE
 !define MUI_PAGE_HEADER_TEXT "PyMediaPlayer"
-#!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
+!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
 !define MUI_PAGE_HEADER_SUBTEXT "open-source software licensed under the MIT License."
 #!define MUI_HEADERIMAGE_BITMAP "file.bmp"
 #!define MUI_WELCOMEFINISHPAGE_BITMAP "file.bmp"
@@ -34,8 +34,8 @@ RequestExecutionLevel admin
 !insertmacro MUI_UNPAGE_INSTFILES
 !insertmacro MUI_UNPAGE_FINISH
 
-!insertmacro MUI_LANGUAGE "Swedish"
-#!insertmacro MUI_LANGUAGE "English"
+#!insertmacro MUI_LANGUAGE "Swedish"
+!insertmacro MUI_LANGUAGE "English"
 
 Section ""
     SetOutPath $INSTDIR
