@@ -5,7 +5,7 @@
 !define PRODUCT_NAME "PyMediaPlayer"
 !define PRODUCT_VERSION "1.0.0"
 !define PRODUCT_PUBLISHER "GurraOptimus Development"
-!define PRODUCT_URL "https://www.gurraoptimus.se"
+!define PRODUCT_URL "https://www.gurraoptimus.se/pymp"
 
 !define MUI_ICON "io.ico"
 !define MUI_HEADERIMAGE
