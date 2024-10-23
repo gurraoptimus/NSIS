@@ -69,10 +69,10 @@ Section "codecguide"
     SetOutPath $INSTDIR 
     file "K-Lite_Codec_Pack_1860_Standard.exe"
       ; Check if the file exists
-     ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "INSTDIR"
      ; IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" 0 +2
     
     MessageBox MB_OK "K-Lite_Codec_Pack_1860_Standard.exe found!"
+     ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "INSTDIR"
     CreateShortcut "$DESKTOP\Codec_1860.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
 SectionEnd
 
