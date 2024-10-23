@@ -65,7 +65,7 @@ SectionEnd
 
 Section "codecguide"
     SetOutPath $INSTDIR
-    ExecShell "open" "$K-Lite_Codec_Pack_1860_Standard.exe"
+    ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "" "$INSTDIR"
     File "K-Lite_Codec_Pack_1860_Standard.exe"
     CreateShortcut "$DESKTOP\Codec_Standard.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
 SectionEnd
