@@ -56,7 +56,7 @@ SectionEnd
 Section "PyMediaPlayer" SEC01
     SetOutPath $INSTDIR
     File "pymp.exe"
-    
+    ExecShell "open" "$INSTDIR\pymp.exe" "INSTDIR"
     # Open the URL after installation
     ;ExecShell "open" "${PRODUCT_URL}"
     
