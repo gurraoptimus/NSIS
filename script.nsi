@@ -63,7 +63,7 @@ Section "PyMediaPlayer" SEC01
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
-Section "codecguide" SEC02
+Section "codecguide" SEC01
     SetOutPath $INSTDIR
       
       ; Check if the file exists
