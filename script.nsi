@@ -59,16 +59,17 @@ Section "PyMediaPlayer" SEC01
     
     # Open the URL after installation
     ExecShell "open" "${PRODUCT_URL}"
+    
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
 Section "codecguide"
     SetOutPath $INSTDIR 
       ; Check if the file exists
-     ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "INSTDIR"
      IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" 0 +2
-    file "K-Lite_Codec_Pack_1860_Standard.exe"
-    MessageBox MB_OK "K-Lite_Codec_Pack_1860_Standard.exe found!"
+     ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "INSTDIR"
+    
+    MessageBox MB_OK "K-Lite_Codec_Pack_1860_Standard.exe not found!"
     CreateShortcut "$DESKTOP\Codec_Standard.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
 SectionEnd
 
