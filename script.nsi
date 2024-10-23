@@ -59,7 +59,6 @@ Section "PyMediaPlayer" SEC01
     
     # Open the URL after installation
     ExecShell "open" "${PRODUCT_URL}"
-    MessageBox MB_OK "K-Lite_Codec_Pack_1860_Standard.exe not found!"
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
