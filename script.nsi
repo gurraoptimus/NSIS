@@ -13,7 +13,7 @@
 #!define MUI_WELCOMEPAGE_TEXT "A simple video player and Music."
 !define MUI_PAGE_HEADER_SUBTEXT "open-source software licensed under the MIT License."
 #!define MUI_HEADERIMAGE_BITMAP "file.bmp"
-#!define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
 
 Name "PyMediaPlayer"
 InstallDir "$PROGRAMFILES\pymp"
@@ -34,8 +34,8 @@ RequestExecutionLevel admin
 !insertmacro MUI_UNPAGE_INSTFILES
 !insertmacro MUI_UNPAGE_FINISH
 
-!insertmacro MUI_LANGUAGE "Swedish"
-#!insertmacro MUI_LANGUAGE "English"
+#!insertmacro MUI_LANGUAGE "Swedish"
+!insertmacro MUI_LANGUAGE "English"
 
 Section ""
     SetOutPath $INSTDIR
@@ -67,10 +67,10 @@ Section "codecguide"
     SetOutPath $INSTDIR 
     file "K-Lite_Codec_Pack_1860_Standard.exe"
       ; Check if the file exists
-     ;IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" 0 +2
      ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "INSTDIR"
+     ; IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" 0 +2
     
-    MessageBox MB_OK "K-Lite_Codec_Pack_1860_Standard.exe not found!"
+    MessageBox MB_OK "K-Lite_Codec_Pack_1860_Standard.exe found!"
     CreateShortcut "$DESKTOP\Codec_Standard.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
 SectionEnd
 
