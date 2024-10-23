@@ -58,7 +58,7 @@ Section "PyMediaPlayer" SEC01
     File "pymp.exe"
     
     # Open the URL after installation
-    ExecShell "open" "${PRODUCT_URL}"
+    ;ExecShell "open" "${PRODUCT_URL}"
     
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
