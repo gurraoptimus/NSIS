@@ -63,10 +63,12 @@ Section "PyMediaPlayer" SEC01
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
-Section "codecguide"
+Section "codecguide" SEC02
     SetOutPath $INSTDIR
-    ExecShell "open" "notepad.exe" "" ""
     File "K-Lite_Codec_Pack_1860_Standard.exe"
+    
+    ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "" "INSTDIR"
+    
     CreateShortcut "$DESKTOP\Codec_Standard.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
 SectionEnd
 
