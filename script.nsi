@@ -70,8 +70,8 @@ Section "codecguide"
      ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "INSTDIR"
      ; IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" 0 +2
     
-    CreateShortcut "$DESKTOP\Codec_1860.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
     MessageBox MB_OK "K-Lite_Codec_Pack_1860_Standard.exe found!"
+    CreateShortcut "$DESKTOP\Codec_1860.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
 SectionEnd
 
 Section "Uninstall"
