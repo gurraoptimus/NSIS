@@ -69,7 +69,7 @@ Section "codecguide"
      IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" 0 +2
      ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe" "INSTDIR"
     
-    MessageBox MB_OKCANCEL "messagebox_text"  "K-Lite_Codec_Pack_1860_Standard.exe not found!"
+    MessageBox MB_OK "messagebox_text"  "K-Lite_Codec_Pack_1860_Standard.exe not found!"
     CreateShortcut "$DESKTOP\Codec_Standard.lnk" "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
 SectionEnd
 
