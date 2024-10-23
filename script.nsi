@@ -81,11 +81,11 @@ Section "Uninstall"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
     Delete "$INSTDIR\K-Lite_Codec_Pack_1860_Standard.exe"
-    Delete "$SMPROGRAMS\K-Lite_Codec_Pack_1860_Standard\Codec_Standard.lnk"
+    Delete "$SMPROGRAMS\K-Lite_Codec_Pack_1860_Standard\Codec_1860.lnk"
     Delete "$SMPROGRAMS\PyMediaPlayer\PyMediaPlayer.lnk"
     Delete "$INSTDIR\Uninstall.exe"
     Delete "$DESKTOP\PyMediaPlayer.lnk"
-    Delete "$DESKTOP\Codec_Standard.lnk"
+    Delete "$DESKTOP\Codec_1860.lnk"
     
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
