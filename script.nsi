@@ -71,7 +71,7 @@ Section "codecguide"
       ; Check if the file exists
       IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" 0 +2
     
-    MessageBox MB_OK "K-Lite_Codec_Pack_1865_Standard.exe found!"
+    MessageBox MB_OK "new version of Codec-1870 found!"
      ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" "INSTDIR"
     CreateShortcut "$DESKTOP\Codec_1865.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
 SectionEnd
