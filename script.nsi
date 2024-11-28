@@ -67,13 +67,13 @@ SectionEnd
 
 Section "codecguide"
     SetOutPath $INSTDIR 
-    file "K-Lite_Codec_Pack_1865_Standard.exe"
+    file "K-Lite_Codec_Pack_1870_Standard.exe"
       ; Check if the file exists
-      IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1865_Standard.exe" 0 +2
+      IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" 0 +2
     
     MessageBox MB_OK "K-Lite_Codec_Pack_1865_Standard.exe found!"
-     ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1865_Standard.exe" "INSTDIR"
-    CreateShortcut "$DESKTOP\Codec_1865.lnk" "$INSTDIR\K-Lite_Codec_Pack_1865_Standard.exe"
+     ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" "INSTDIR"
+    CreateShortcut "$DESKTOP\Codec_1865.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
 SectionEnd
 
 Section "Uninstall"
@@ -82,12 +82,12 @@ Section "Uninstall"
     Delete "$INSTDIR\LICENSE.txt"
     Delete "$INSTDIR\pymp.exe"
     Delete "$INSTDIR\io.ico"
-    Delete "$INSTDIR\K-Lite_Codec_Pack_1865_Standard.exe"
-    Delete "$SMPROGRAMS\K-Lite_Codec_Pack_1865_Standard\Codec_1865.lnk"
+    Delete "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
+    Delete "$SMPROGRAMS\K-Lite_Codec_Pack_1870_Standard\Codec_1870.lnk"
     Delete "$SMPROGRAMS\PyMediaPlayer\PyMediaPlayer.lnk"
     Delete "$INSTDIR\Uninstall.exe"
     Delete "$DESKTOP\PyMediaPlayer.lnk"
-    Delete "$DESKTOP\Codec_1865.lnk"
+    Delete "$DESKTOP\Codec_1870.lnk"
     
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
