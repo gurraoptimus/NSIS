@@ -73,7 +73,7 @@ Section "codecguide"
     
     MessageBox MB_OK "new version of Codec-1870 found!"
      ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" "INSTDIR"
-    CreateShortcut "$DESKTOP\Codec_1865.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
+    CreateShortcut "$DESKTOP\Codec_1870.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
 SectionEnd
 
 Section "Uninstall"
