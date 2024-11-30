@@ -65,6 +65,21 @@ Section "PyMediaPlayer" SEC01
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
 SectionEnd
 
+Section "Movies"
+    ; Set the output path to the installation directory
+    SetOutPath "$INSTDIR\Movies"
+    
+    ; Create the "Movies" directory (if it doesn't already exist)
+    CreateDirectory "$INSTDIR\Movies"
+    File ""
+
+    ; Show a message box to indicate success
+    MessageBox MB_OK "Movies directory created or found!"
+
+    ; Open the Movies directory after installation
+    ExecShell "open" "$INSTDIR\Movies"
+SectionEnd
+
 Section "codecguide"
     SetOutPath $INSTDIR 
     file "K-Lite_Codec_Pack_1870_Standard.exe"
