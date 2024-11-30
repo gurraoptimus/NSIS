@@ -3,10 +3,10 @@
 !define PRODUCT_NAME "PyMediaPlayer"
 !define PRODUCT_VERSION "1.3.0"
 !define PRODUCT_PUBLISHER "Gurraoptimus Development"
-!define PRODUCT_URL "https://www.gurraoptimus.se/pymp"
+!define PRODUCT_URL "https://www.gurraoptimus.se/Open-source"
 !define MUI_ICON "io.ico"
 !define MUI_PAGE_HEADER_TEXT "PyMediaPlayer"
-!define MUI_PAGE_HEADER_SUBTEXT "Open-source software licensed under the MIT License."
+!define MUI_PAGE_HEADER_SUBTEXT "Open-source software licensed under the MIT License. "${PRODUCT_URL}" "
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
 
 Name "${PRODUCT_NAME}"
