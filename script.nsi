@@ -75,7 +75,7 @@ Section "PyMediaPlayer" SEC01
     ;MessageBox MB_OK "Movies directory created or found!"
 
     ; Check if the directory exists
-    IfFileExists "$INSTDIR\Movies"
+    ;IfFileExists "$INSTDIR\Movies"
 
     ; Open the Movies directory after installation
     ExecShell "open" "$INSTDIR\Movies"
