@@ -77,7 +77,7 @@ Section "PyMediaPlayer" SEC01
     ;ExecShell "open" "${PRODUCT_URL}"
     
     ;MessageBox MB_OK "pymp.exe found!"
-    ExecShell "open" "$INSTDIR\pymp.exe" "INSTDIR"
+    ;ExecShell "open" "$INSTDIR\pymp.exe" "INSTDIR"
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0   
 SectionEnd
 
@@ -87,8 +87,8 @@ Section "codecguide"
       ; Check if the file exists
       IfFileExists "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" 0 +2
     
-    MessageBox MB_OK "new version of Codec-1870 found!"
-     ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" "INSTDIR"
+    ;MessageBox MB_OK "new version of Codec-1870 found!"
+    ;ExecShell "open" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" "INSTDIR"
     CreateShortcut "$DESKTOP\Codec_1870.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
 SectionEnd
 
