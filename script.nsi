@@ -63,9 +63,7 @@ Section "PyMediaPlayer" SEC01
     MessageBox MB_OK "pymp.exe found!"
     ExecShell "open" "$INSTDIR\pymp.exe" "INSTDIR"
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
-SectionEnd
-
-Section "Movies"
+    
     ; Set the output path to the installation directory
     SetOutPath "$INSTDIR\Movies"
     
