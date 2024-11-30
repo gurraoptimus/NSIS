@@ -104,7 +104,6 @@ Section "Uninstall"
     Delete "$INSTDIR\Uninstall.exe"
     Delete "$DESKTOP\PyMediaPlayer.lnk"
     Delete "$DESKTOP\Codec_1870.lnk"
-    Delete "$INSTDIR\Movies
-    
+        
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
 SectionEnd
