@@ -65,11 +65,14 @@ Section "PyMediaPlayer" SEC01
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
     
     ; Set the output path to the installation directory
-    SetOutPath "$INSTDIR\Movies"
+    SetOutPath "$INSTDIR\Movies\"
     
     ; Create the "Movies" directory (if it doesn't already exist)
     CreateDirectory "$INSTDIR\Movies\"
+    
     ;File ""
+    ; Check if the directory exists
+    IfFileExists "$INSTDIR\Movies"
 
     ; Show a message box to indicate success
     ;MessageBox MB_OK "Movies directory created or found!"
