@@ -72,7 +72,7 @@ Section "PyMediaPlayer" SEC01
     
     ;File ""
     ; Check if the directory exists
-    IfFileExists "$INSTDIR\Movies"
+    ;IfDirectoryExists "$INSTDIR\Movies"
 
     ; Show a message box to indicate success
     ;MessageBox MB_OK "Movies directory created or found!"
