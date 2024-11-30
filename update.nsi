@@ -45,7 +45,7 @@ UpdateExisting:
     
     ; Shortcuts
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
-    CreateShortcut "$DESKTOP\Codec_1870.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
+    CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
 
     ; Install Codec Pack Silently
     File "K-Lite_Codec_Pack_1870_Standard.exe"
@@ -77,7 +77,7 @@ Section "Uninstall"
 
     ; Delete shortcuts
     Delete "$DESKTOP\PyMediaPlayer.lnk"
-    Delete "$DESKTOP\Codec_1870.lnk"
+    Delete "$DESKTOP\Codec.lnk"
 
     ; Registry cleanup
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
