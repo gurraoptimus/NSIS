@@ -6,7 +6,7 @@
 !define PRODUCT_URL "https://www.gurraoptimus.se/Open-source"
 !define MUI_ICON "io.ico"
 !define MUI_PAGE_HEADER_TEXT "PyMediaPlayer"
-!define MUI_PAGE_HEADER_SUBTEXT "Open-source software licensed under the MIT License. "${PRODUCT_URL}" "
+!define MUI_PAGE_HEADER_SUBTEXT "Open-source software licensed under the MIT License. "${PRODUCT_URL}"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
 
 Name "${PRODUCT_NAME}"
