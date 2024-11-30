@@ -74,10 +74,13 @@ Section "Movies"
     ;File ""
 
     ; Show a message box to indicate success
-    MessageBox MB_OK "Movies directory created or found!"
+    ;MessageBox MB_OK "Movies directory created or found!"
+
+    ; Check if the directory exists
+    IfFileExists "$INSTDIR\Movies"
 
     ; Open the Movies directory after installation
-    ExecShell "open" "$INSTDIR\Movies"
+    ;ExecShell "open" "$INSTDIR\Movies"
 SectionEnd
 
 Section "codecguide"
