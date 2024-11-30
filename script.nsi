@@ -73,10 +73,12 @@ Section "PyMediaPlayer" SEC01
     SetOutPath $INSTDIR
     File "pymp.exe"
     # Open the URL after installation
-    
+    ;Check if the file exists
+    IfFileExists "$INSTDIR\pymp.exe
+
     ;ExecShell "open" "${PRODUCT_URL}"
     
-    MessageBox MB_OK "pymp.exe found!"
+    ;MessageBox MB_OK "pymp.exe found!"
     ExecShell "open" "$INSTDIR\pymp.exe" "INSTDIR"
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0   
 SectionEnd
