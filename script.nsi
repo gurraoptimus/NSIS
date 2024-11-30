@@ -50,6 +50,7 @@ Section ""
     File "LICENSE.txt"
     File "io.ico"
     File "readme.md"
+    WriteUninstaller "$INSTDIR\Uninstall.exe"
 
     ; Set the output path to the installation directory
     SetOutPath "$INSTDIR\Movies\"
@@ -66,8 +67,7 @@ Section ""
 
     ; Open the Movies directory after installation
     ExecShell "open" "$INSTDIR\Movies"
-    
-    WriteUninstaller "$INSTDIR\Uninstall.exe"
+ 
 SectionEnd
 
 Section "PyMediaPlayer" SEC01
