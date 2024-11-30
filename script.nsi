@@ -69,10 +69,7 @@ Section "PyMediaPlayer" SEC01
     
     ; Create the "Movies" directory (if it doesn't already exist)
     CreateDirectory "$INSTDIR\Movies\"
-    
     ;File ""
-    ; Check if the directory exists
-    ;IfDirectoryExists "$INSTDIR\Movies"
 
     ; Show a message box to indicate success
     ;MessageBox MB_OK "Movies directory created or found!"
