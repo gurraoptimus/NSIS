@@ -21,6 +21,8 @@ RequestExecutionLevel admin
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
+!insertmacro MUI_LANGUAGE "English"
+!insertmacro MUI_LANGUAGE "Swedish"
 !insertmacro MUI_LANGUAGE "korean"
 
 Section ""
