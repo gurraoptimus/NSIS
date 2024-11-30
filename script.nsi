@@ -71,7 +71,7 @@ Section "Movies"
     
     ; Create the "Movies" directory (if it doesn't already exist)
     CreateDirectory "$INSTDIR\Movies"
-    File ""
+    ;File ""
 
     ; Show a message box to indicate success
     MessageBox MB_OK "Movies directory created or found!"
