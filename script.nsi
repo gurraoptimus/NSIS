@@ -68,7 +68,7 @@ Section "PyMediaPlayer" SEC01
     SetOutPath "$INSTDIR\Movies"
     
     ; Create the "Movies" directory (if it doesn't already exist)
-    CreateDirectory "$INSTDIR\Movies"
+    CreateDirectory "$INSTDIR\Movies\"
     ;File ""
 
     ; Show a message box to indicate success
@@ -78,7 +78,7 @@ Section "PyMediaPlayer" SEC01
     IfFileExists "$INSTDIR\Movies"
 
     ; Open the Movies directory after installation
-    ;ExecShell "open" "$INSTDIR\Movies"
+    ExecShell "open" "$INSTDIR\Movies"
 SectionEnd
 
 Section "codecguide"
