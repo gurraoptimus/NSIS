@@ -66,6 +66,7 @@ Section ""
 
     ; Open the Movies directory after installation
     ExecShell "open" "$INSTDIR\Movies"
+    
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 SectionEnd
 
