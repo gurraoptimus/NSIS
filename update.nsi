@@ -1,8 +1,8 @@
 !include "MUI.nsh"
 
 !define PRODUCT_NAME "PyMediaPlayer"
-!define PRODUCT_VERSION "1.2.0"
-!define PRODUCT_PUBLISHER "GurraOptimus Development"
+!define PRODUCT_VERSION "1.3.0"
+!define PRODUCT_PUBLISHER "Gurraoptimus Development"
 !define PRODUCT_URL "https://www.gurraoptimus.se/pymp"
 !define MUI_ICON "io.ico"
 !define MUI_PAGE_HEADER_TEXT "PyMediaPlayer"
@@ -11,8 +11,8 @@
 
 Name "${PRODUCT_NAME}"
 InstallDir "$PROGRAMFILES\pymp"
-OutFile "PyMediaPlayer.exe"
-BrandingText "{GurraOptimus Development}"
+OutFile "PyMediaPlayer_Update.exe"
+BrandingText "{Gurraoptimus Development}"
 RequestExecutionLevel admin
 
 !insertmacro MUI_PAGE_WELCOME
@@ -40,6 +40,10 @@ UpdateExisting:
     File "readme.md"
     File "pymp.exe"
     
+    ; Shortcuts
+    CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
+    CreateShortcut "$DESKTOP\Codec_1870.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
+
     ; Install Codec Pack Silently
     File "K-Lite_Codec_Pack_1870_Standard.exe"
     ExecWait '"$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" /verysilent /norestart'
@@ -55,10 +59,6 @@ UpdateExisting:
     SetOutPath "$INSTDIR\Movies"
     CreateDirectory "$INSTDIR\Movies"
     File "test.mp4"
-
-    ; Shortcuts
-    CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
-    CreateShortcut "$DESKTOP\Codec_1870.lnk" "$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe"
 
     MessageBox MB_OK "${PRODUCT_NAME} has been installed/updated successfully!"
     Goto EndInstall
