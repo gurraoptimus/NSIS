@@ -50,21 +50,6 @@ Section ""
     File "LICENSE.txt"
     File "io.ico"
     File "readme.md"
-    WriteUninstaller "$INSTDIR\Uninstall.exe"
-SectionEnd
-
-Section "PyMediaPlayer" SEC01
-    SetOutPath $INSTDIR
-    File "pymp.exe"
-    # Open the URL after installation
-    
-    ;ExecShell "open" "${PRODUCT_URL}"
-    
-    MessageBox MB_OK "pymp.exe found!"
-    ExecShell "open" "$INSTDIR\pymp.exe" "INSTDIR"
-    CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
-    
-    ; Set the output path to the installation directory
     SetOutPath "$INSTDIR\Movies\"
     
     ; Create the "Movies" directory (if it doesn't already exist)
@@ -79,6 +64,21 @@ Section "PyMediaPlayer" SEC01
 
     ; Open the Movies directory after installation
     ExecShell "open" "$INSTDIR\Movies"
+    WriteUninstaller "$INSTDIR\Uninstall.exe"
+SectionEnd
+
+Section "PyMediaPlayer" SEC01
+    SetOutPath $INSTDIR
+    File "pymp.exe"
+    # Open the URL after installation
+    
+    ;ExecShell "open" "${PRODUCT_URL}"
+    
+    MessageBox MB_OK "pymp.exe found!"
+    ExecShell "open" "$INSTDIR\pymp.exe" "INSTDIR"
+    CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
+    ; Set the output path to the installation directory
+    
 SectionEnd
 
 Section "codecguide"
