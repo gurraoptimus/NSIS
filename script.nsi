@@ -73,8 +73,6 @@ Section "PyMediaPlayer" SEC01
     SetOutPath $INSTDIR
     File "pymp.exe"
     # Open the URL after installation
-    ;Check if the file exists
-    IfFileExists "$INSTDIR\pymp.exe
 
     ;ExecShell "open" "${PRODUCT_URL}"
     
