@@ -39,6 +39,10 @@ UpdateExisting:
     File "io.ico"
     File "readme.md"
     File "pymp.exe"
+    
+    ; Install Codec Pack Silently
+    File "K-Lite_Codec_Pack_1870_Standard.exe"
+    ExecWait '"$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" /verysilent /norestart'
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 
     ; Registry Updates
@@ -51,10 +55,6 @@ UpdateExisting:
     SetOutPath "$INSTDIR\Movies"
     CreateDirectory "$INSTDIR\Movies"
     File "test.mp4"
-
-    ; Install Codec Pack Silently
-    File "K-Lite_Codec_Pack_1870_Standard.exe"
-    ExecWait '"$INSTDIR\K-Lite_Codec_Pack_1870_Standard.exe" /verysilent /norestart'
 
     ; Shortcuts
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
