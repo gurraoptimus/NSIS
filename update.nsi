@@ -61,7 +61,7 @@ UpdateExisting:
     ; Movies Directory
     SetOutPath "$INSTDIR\Movies"
     CreateDirectory "$INSTDIR\Movies"
-    File "test.mp4"
+    File "Intro.mp4"
 
     MessageBox MB_OK "${PRODUCT_NAME} has been installed/updated successfully!"
     Goto EndInstall
