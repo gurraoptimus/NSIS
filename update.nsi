@@ -1,7 +1,7 @@
 !include "MUI.nsh"
 
 !define PRODUCT_NAME "PyMediaPlayer"
-!define PRODUCT_VERSION "1.4.0"
+!define PRODUCT_VERSION "1.5.0"
 !define PRODUCT_PUBLISHER "Gurraoptimus Development"
 !define PRODUCT_URL "gurraoptimus.se/open-source"
 !define MUI_ICON "io.ico"
