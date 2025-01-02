@@ -45,11 +45,11 @@ UpdateExisting:
     
     ; Shortcuts
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
-    CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_1875.exe"
+    CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_${PRODUCT_VERSION}.exe"
 
     ; Install Codec Pack Silently
-    File "Codec_1875.exe"
-    ExecWait '"$INSTDIR\Codec_1875.exe" /verysilent /norestart'
+    File "Codec_${PRODUCT_VERSION}.exe"
+    ExecWait '"$INSTDIR\Codec_${PRODUCT_VERSION}.exe" /verysilent /norestart'
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 
     ; Registry Updates
