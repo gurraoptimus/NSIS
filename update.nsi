@@ -12,7 +12,7 @@
 
 Name "${PRODUCT_NAME}"
 InstallDir "$PROGRAMFILES\pymp"
-OutFile "PyMediaPlayer_Update.exe"
+OutFile "PyMediaPlayer_${PRODUCT_VERSION}.exe"
 BrandingText "{Gurraoptimus Development}"
 RequestExecutionLevel admin
 
