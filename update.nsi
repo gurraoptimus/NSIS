@@ -9,6 +9,7 @@
 !define MUI_PAGE_HEADER_SUBTEXT "Open-source software licensed under the MIT License. ${PRODUCT_URL} "
 !define MUI_HEADERIMAGE
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
+!define CODEC_VERSION "1875"
 
 Name "${PRODUCT_NAME}"
 InstallDir "$PROGRAMFILES\pymp"
@@ -45,11 +46,11 @@ UpdateExisting:
     
     ; Shortcuts
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
-    CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_1875.exe"
+    CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_${CODEC_VERSION}.exe"
 
     ; Install Codec Pack Silently
-    File "Codec_1875.exe"
-    ExecWait '"$INSTDIR\Codec_1875.exe" /verysilent /norestart'
+    File "Codec_${CODEC_VERSION}.exe"
+    ExecWait '"$INSTDIR\Codec_${CODEC_VERSION}.exe" /verysilent /norestart'
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 
     ; Registry Updates
