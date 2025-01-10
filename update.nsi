@@ -3,13 +3,13 @@
 !define PRODUCT_NAME "PyMediaPlayer"
 !define PRODUCT_VERSION "1.1.0"
 !define PRODUCT_PUBLISHER "Gurraoptimus Development"
-!define PRODUCT_URL "gurraoptimus.se/open-source"
+!define PRODUCT_URL "https://source.gurraoptimus.se/"
 !define MUI_ICON "io.ico"
 !define MUI_PAGE_HEADER_TEXT "PyMediaPlayer"
 !define MUI_PAGE_HEADER_SUBTEXT "Open-source software licensed under the MIT License. ${PRODUCT_URL} "
 !define MUI_HEADERIMAGE
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
-!define CODEC_VERSION "1875"
+!define VERSION "1875"
 
 Name "${PRODUCT_NAME}"
 InstallDir "$PROGRAMFILES\pymp"
@@ -46,19 +46,22 @@ UpdateExisting:
     
     ; Shortcuts
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
-    CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_${CODEC_VERSION}.exe"
+    CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_${VERSION}.exe"
 
     ; Install Codec Pack Silently
-    File "Codec_${CODEC_VERSION}.exe"
-    ExecWait '"$INSTDIR\Codec_${CODEC_VERSION}.exe" /verysilent /norestart'
+    File "Codec_${VERSION}.exe"
+    Rename "INSTDIR\Codec_${VERSION}.exe" "INSTDIR\Codec_${VERSION}.exe"
+    ExecWait '"$INSTDIR\Codec_${VERSION}.exe" /verysilent /norestart'
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 
     ; Registry Updates
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayName" "${PRODUCT_NAME}"
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayVersion" "${PRODUCT_VERSION}"
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "Publisher" "${PRODUCT_PUBLISHER}"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "URLInfoAbout" "${PRODUCT_URL}"
+    WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "DisplayIcon" "$INSTDIR\io.ico"
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp" "UninstallString" "$INSTDIR\Uninstall.exe"
-
+    
     ; Movies Directory
     SetOutPath "$INSTDIR\Movies"
     CreateDirectory "$INSTDIR\Movies"
