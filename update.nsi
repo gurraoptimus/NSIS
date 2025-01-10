@@ -3,7 +3,7 @@
 !define PRODUCT_NAME "PyMediaPlayer"
 !define PRODUCT_VERSION "1.1.0"
 !define PRODUCT_PUBLISHER "Gurraoptimus Development"
-!define PRODUCT_URL "https://source.gurraoptimus.se/"
+!define PRODUCT_URL "https://gurraoptimus.github.io/NSIS"
 !define MUI_ICON "io.ico"
 !define MUI_PAGE_HEADER_TEXT "PyMediaPlayer"
 !define MUI_PAGE_HEADER_SUBTEXT "Open-source software licensed under the MIT License. ${PRODUCT_URL} "
