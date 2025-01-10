@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PyMediaPlayer</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://gurraoptimus.github.io/templates/stylesheet.css">
 </head>
 <body>
     <header>
@@ -59,9 +59,16 @@
     <footer>
         <p>Developer: GurraOptimus</p>
         <footer>
-        <p>&copy; 2025 GurraOptimus Development. All rights reserved. | Open-source and powered by the community.</p>
+        <p>Copyright &copy; <span id="curYr"></span> GurraOptimus Development. All rights reserved&mldr; | Open-source and powered by the community.</p>
     </footer>
-
-    <script src="script.js"></script>
+    
+    <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById("curYr").innerHTML = year;
+    </script>
+    
+    <script src="https://gurraoptimus.github.io/templates/script.js">
+    </script>
 </body>
 </html>
