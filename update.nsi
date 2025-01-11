@@ -10,6 +10,7 @@
 !define MUI_HEADERIMAGE
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
 !define VERSION "1875"
+!define OLD_VERSION "1874"
 
 Name "${PRODUCT_NAME}"
 InstallDir "$PROGRAMFILES\pymp"
@@ -49,9 +50,9 @@ UpdateExisting:
     CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_${VERSION}.exe"
 
     ; Install Codec Pack Silently
-    File "Codec_${VERSION}.exe"
-    Rename "${INSTDIR}\Codec_${VERSION}.exe" "${INSTDIR}\Codec_${VERSION}.exe"
-    ExecWait '"${INSTDIR}\Codec_${VERSION}.exe" /verysilent /norestart'
+    File "Codec_${OLD_VERSION}.exe"
+    Rename "$INSTDIR\Codec_${OLD_VERSION}.exe" "$INSTDIR\Codec_${VERSION}.exe"
+    ExecWait '"$INSTDIR\Codec_${VERSION}.exe" /verysilent /norestart'
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 
     ; Registry Updates
