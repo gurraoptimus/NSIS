@@ -50,8 +50,8 @@ UpdateExisting:
 
     ; Install Codec Pack Silently
     File "Codec_${VERSION}.exe"
-    Rename "INSTDIR\Codec_${VERSION}.exe" "INSTDIR\Codec_${VERSION}.exe"
-    ExecWait '"$INSTDIR\Codec_${VERSION}.exe" /verysilent /norestart'
+    Rename "${INSTDIR}\Codec_${VERSION}.exe" "${INSTDIR}\Codec_${VERSION}.exe"
+    ExecWait '"${INSTDIR}\Codec_${VERSION}.exe" /verysilent /norestart'
     WriteUninstaller "$INSTDIR\Uninstall.exe"
 
     ; Registry Updates
