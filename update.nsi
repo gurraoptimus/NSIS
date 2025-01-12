@@ -10,7 +10,7 @@
 !define MUI_HEADERIMAGE
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp"
 !define VERSION "1875"
-!define OLD_VERSION "1874"
+!define OLD_VERSION "1870"
 
 Name "${PRODUCT_NAME}"
 InstallDir "$PROGRAMFILES\pymp"
@@ -48,6 +48,10 @@ UpdateExisting:
     ; Shortcuts
     CreateShortcut "$DESKTOP\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
     CreateShortcut "$DESKTOP\Codec.lnk" "$INSTDIR\Codec_${VERSION}.exe"
+    
+    CreateDirectory "$SMPROGRAMS\${PRODUCT_NAME}"
+    CreateShortcut "$SMPROGRAMS\${PRODUCT_NAME}\PyMediaPlayer.lnk" "$INSTDIR\pymp.exe" "" "$INSTDIR\io.ico" 0
+    CreateShortcut "$SMPROGRAMS\${PRODUCT_NAME}\Codec.lnk" "$INSTDIR\Codec_${VERSION}.exe"
 
     ; Install Codec Pack Silently
     File "Codec_${OLD_VERSION}.exe"
@@ -79,10 +83,13 @@ Section "Uninstall"
 
     ; Remove directories
     RMDir /r "$INSTDIR"
+    RMDir /r "$SMPROGRAMS\${PRODUCT_NAME}"
 
     ; Delete shortcuts
     Delete "$DESKTOP\PyMediaPlayer.lnk"
     Delete "$DESKTOP\Codec.lnk"
+    Delete "$SMPROGRAMS\${PRODUCT_NAME}\PyMediaPlayer.lnk"
+    Delete "$SMPROGRAMS\${PRODUCT_NAME}\Codec.lnk"
 
     ; Registry cleanup
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\pymp"
